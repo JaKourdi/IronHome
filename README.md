@@ -109,9 +109,10 @@ curl -X POST http://localhost:5000/user/add -H 'Content-Type: application/json' 
   },
   "message": "Successfully created new user"
 }
-
+```
 
 * Health check
+
 ```
 curl http://localhost:5000/hello
 ```
