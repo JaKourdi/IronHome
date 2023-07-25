@@ -11,7 +11,6 @@ How to run it?
 git clone https://github.com/JaKourdi/IronHome.git
 cd IronHome
 docker-compose up --build
-}
 ```
 
 ---
@@ -45,7 +44,7 @@ https://refactoring.guru/design-patterns/decorator
 ```
 # navigate to MongoDB container UI
 http://localhost:8081/db/customermgmt/
-}
+
 ```
 
 * JWT Token + authorized routing
