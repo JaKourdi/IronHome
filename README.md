@@ -16,7 +16,7 @@ docker-compose up --build
 ---
 # Idea 
 
-I'm more conformable with Python rather than Javascript.
+I'm more comfortable with Python rather than Javascript.
 Flask is more minimal from Django, so less bloat for the scope of the assignment.
 
 # Structure
