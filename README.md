@@ -1,7 +1,7 @@
 
 # IronHomework
 
-This is partial implementation.
+This is a partial implementation.
 Scope: Customer API + MongoDB
 
 How to run it?
@@ -17,8 +17,8 @@ docker-compose up --build
 ---
 # Idea 
 
-I'm more confortable with Python rather than Javascript.
-Flask is more mininal from Django, so less bloat for the scope of the assigment.
+I'm more conformable with Python rather than Javascript.
+Flask is more minimal from Django, so less bloat for the scope of the assignment.
 
 # Structure
 
@@ -26,20 +26,20 @@ Model class for User identity to model the underlining BSON document.
 Powered by MongoEngine ODM.
 
 
-User validation for before writing into DB is achieved using validors helper functions for User object.
-In this context regex validation seems like the relevant approach (not supported by marshmallow)
-Schema validation (type validation) is achieved for the Item and Order Powered by Marshmallow.
+Validation for User Object is achieved using validators (helper functions).
+For username & password properties regex validation seems like the relevant approach (not supported by marshmallow)
+Schema validation is achieved for the Item and Order identities Powered by Marshmallow.
 
 
-Routing module that ecapsualte the backend routing abilities.
+Routing module that encapsulate the backend routing abilities.
 
-Restricted access with JWT token is achieved by decorator design pattern
+Restricting access with JWT token is achieved by decorator design pattern
 
 https://refactoring.guru/design-patterns/decorator
 
 ---
 
-# How can I test it
+# How can I test it?
 
 * Boostrap data to MongoDB
 ```
@@ -54,7 +54,7 @@ http://localhost:8081/db/customermgmt/
 curl -X POST http://localhost:5000/auth/login  -H 'Content-Type: application/json' -d '{"username":"dummy1","password":"IRON552!$source"}'
 
 ```
-See Generate JWT token - web app can auth user and use the JWT to access restriced page.
+See Generate JWT token - web app can auth user and use the JWT to access restricted page.
 
 Value is saved as a session under user_id
 
